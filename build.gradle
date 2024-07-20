@@ -15,6 +15,10 @@ version = scmVersion.version
 
 catalog {
     versionCatalog {
+        version('spring-boot', '3.3.2')
+        version('lombok', '8.6')
 
+        library('spring-boot-gradle-plugin', 'org.springframework.boot', 'spring-boot-gradle-plugin').versionRef('spring-boot')
+        library('lombok-plugin', 'io.freefair.gradle', 'lombok-plugin').versionRef('lombok')
     }
 }

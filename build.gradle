@@ -1,0 +1,20 @@
+plugins {
+    id 'version-catalog'
+    id 'maven-publish'
+    id 'pl.allegro.tech.build.axion-release' version '1.18.2'
+}
+
+scmVersion {
+    tag {
+        prefix.set("")
+    }
+}
+
+group 'com.raketeneinhorn.gradle'
+version = scmVersion.version
+
+catalog {
+    versionCatalog {
+
+    }
+}

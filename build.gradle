@@ -16,8 +16,8 @@ catalog {
         library('spring-boot-gradle-plugin', 'org.springframework.boot', 'spring-boot-gradle-plugin').versionRef('spring-boot')
         library('lombok-plugin', 'io.freefair.gradle', 'lombok-plugin').versionRef('lombok')
 
-        plugin('axion-release', 'pl.allegro.tech.build.axion-release:1.18.3')
-        plugin('sonarqube', 'org.sonarqube:5.1.0.4882')
+        plugin('axion-release', 'pl.allegro.tech.build.axion-release').version('1.18.3')
+        plugin('sonarqube', 'org.sonarqube').version('5.1.0.4882')
     }
 }
 

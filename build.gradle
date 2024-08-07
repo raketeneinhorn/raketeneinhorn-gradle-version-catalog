@@ -8,6 +8,14 @@ plugins {
 group 'com.raketeneinhorn.gradle'
 version = scmVersion.version
 
+sonar {
+    properties {
+        property "sonar.projectKey", "raketeneinhorn_raketeneinhorn-gradle-version-catalog"
+        property "sonar.organization", "raketeneinhorn"
+        property "sonar.host.url", "https://sonarcloud.io"
+    }
+}
+
 catalog {
     versionCatalog {
         version('spring-boot', '3.3.2')
@@ -18,14 +26,6 @@ catalog {
 
         plugin('axion-release', 'pl.allegro.tech.build.axion-release').version('1.18.3')
         plugin('sonarqube', 'org.sonarqube').version('5.1.0.4882')
-    }
-}
-
-sonar {
-    properties {
-        property "sonar.projectKey", "raketeneinhorn_raketeneinhorn-gradle-version-catalog"
-        property "sonar.organization", "raketeneinhorn"
-        property "sonar.host.url", "https://sonarcloud.io"
     }
 }
 

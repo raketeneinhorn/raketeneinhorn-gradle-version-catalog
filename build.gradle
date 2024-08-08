@@ -1,7 +1,7 @@
 plugins {
     id 'version-catalog'
     id 'maven-publish'
-    id 'pl.allegro.tech.build.axion-release' version '1.18.3'
+    id 'pl.allegro.tech.build.axion-release' version '1.18.4'
     id 'org.sonarqube' version '5.1.0.4882'
 }
 
@@ -24,7 +24,7 @@ catalog {
         library('spring-boot-gradle-plugin', 'org.springframework.boot', 'spring-boot-gradle-plugin').versionRef('spring-boot')
         library('lombok-plugin', 'io.freefair.gradle', 'lombok-plugin').versionRef('lombok')
 
-        plugin('axion-release', 'pl.allegro.tech.build.axion-release').version('1.18.3')
+        plugin('axion-release', 'pl.allegro.tech.build.axion-release').version('1.18.4')
         plugin('sonarqube', 'org.sonarqube').version('5.1.0.4882')
     }
 }

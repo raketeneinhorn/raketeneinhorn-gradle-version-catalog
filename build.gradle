@@ -8,25 +8,29 @@ plugins {
 group 'com.raketeneinhorn.gradle'
 version = scmVersion.version
 
-sonar {
-    properties {
-        property "sonar.projectKey", "raketeneinhorn_raketeneinhorn-gradle-version-catalog"
-        property "sonar.organization", "raketeneinhorn"
-        property "sonar.host.url", "https://sonarcloud.io"
-    }
-}
-
 catalog {
     versionCatalog {
         version('spring-boot', '3.3.2')
         version('lombok', '8.7.1')
 
-        library('spring-boot-gradle-plugin', 'org.springframework.boot', 'spring-boot-gradle-plugin').versionRef('spring-boot')
-        library('lombok-plugin', 'io.freefair.gradle', 'lombok-plugin').versionRef('lombok')
+        library('logstash-logback-encoder', 'net.logstash.logback', 'logstash-logback-encoder').versionRef('spring-boot')
 
         plugin('axion-release', 'pl.allegro.tech.build.axion-release').version('1.18.4')
         plugin('sonarqube', 'org.sonarqube').version('5.1.0.4882')
-        plugin('springframework-boot', 'org.springframework.boot').version('spring-boot')
+        plugin('springframework-boot', 'org.springframework.boot').versionRef('spring-boot')
+        plugin('lombok', 'io.freefair.lombok').versionRef('lombok')
+
+        /* plugins as libraries */
+        library('spring-boot-gradle-plugin', 'org.springframework.boot', 'spring-boot-gradle-plugin').versionRef('spring-boot')
+        library('lombok-plugin', 'io.freefair.gradle', 'lombok-plugin').versionRef('lombok')
+    }
+}
+
+sonar {
+    properties {
+        property "sonar.projectKey", "raketeneinhorn_raketeneinhorn-gradle-version-catalog"
+        property "sonar.organization", "raketeneinhorn"
+        property "sonar.host.url", "https://sonarcloud.io"
     }
 }
 

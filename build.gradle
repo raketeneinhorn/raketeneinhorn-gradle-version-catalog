@@ -13,7 +13,7 @@ catalog {
         version('spring-boot', '3.3.2')
         version('lombok', '8.7.1')
 
-        library('logstash-logback-encoder', 'net.logstash.logback', 'logstash-logback-encoder').versionRef('spring-boot')
+        library('logstash-logback-encoder', 'net.logstash.logback', 'logstash-logback-encoder').version('8.0')
 
         plugin('axion-release', 'pl.allegro.tech.build.axion-release').version('1.18.4')
         plugin('sonarqube', 'org.sonarqube').version('5.1.0.4882')

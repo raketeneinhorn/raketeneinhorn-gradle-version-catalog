@@ -3,7 +3,7 @@ Benjamin Boksa
 :toc:
 :toclevels: 3
 
-Gradle version catalog for Spring Boot projects providing artifacts in addition to Spring Boot's dependency management.
+Gradle version catalog for Spring Boot projects. Provides artifacts in addition to Spring Boot's dependency management.
 
 == Motivation
 

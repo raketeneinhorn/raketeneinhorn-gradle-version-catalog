@@ -1,4 +1,37 @@
 = Raketeneinhorn Gradle Version Catalog
+Benjamin Boksa
+:toc:
+:toclevels: 3
+
+Gradle version catalog for Spring Boot projects providing artifacts in addition to Spring Boot's dependency management.
+
+== Motivation
+
+This https://docs.gradle.org/current/userguide/platforms.html#sub:version-catalog[Gradle version catalog] contains
+artifacts that are not part of
+https://docs.spring.io/spring-boot/appendix/dependency-versions/coordinates.html[Spring Boot's dependency management].
+
+The versions of the artifacts are chosen to be compatible with the Spring Boot version defined by the version catalog.
+
+== Usage
+
+https://docs.gradle.org/current/userguide/platforms.html#sec:importing-published-catalog[Importing a published catalog]
+is done by providing the information using the settings API:
+
+[source,groovy]
+----
+dependencyResolutionManagement {
+    versionCatalogs {
+        libs {
+            from('com.raketeneinhorn.gradle:raketeneinhorn-gradle-version-catalog:0.3.1')
+        }
+    }
+}
+----
+
+IMPORTANT: Please note that `raketeneinhorn-gradle-version-catalog` currently is
+https://github.com/raketeneinhorn/raketeneinhorn-gradle-version-catalog/packages[published on GitHub Packages], which
+requires authentication.
 
 == License
 

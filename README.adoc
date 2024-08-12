@@ -11,9 +11,14 @@ This https://docs.gradle.org/current/userguide/platforms.html#sub:version-catalo
 artifacts that are not part of
 https://docs.spring.io/spring-boot/appendix/dependency-versions/coordinates.html[Spring Boot's dependency management].
 
-The versions of the artifacts are chosen to be compatible with the Spring Boot version defined by the version catalog.
+The artifact versions are selected to be compatible with the Spring Boot version defined in the version catalog.
+
+When the version catalog is used, the number of versions to be managed across libraries is drastically reduced, ensuring
+consistency in the versions being used.
 
 == Usage
+
+=== Import version catalog
 
 https://docs.gradle.org/current/userguide/platforms.html#sec:importing-published-catalog[Importing a published catalog]
 is done by providing the information using the settings API:
@@ -32,6 +37,33 @@ dependencyResolutionManagement {
 IMPORTANT: Please note that `raketeneinhorn-gradle-version-catalog` currently is
 https://github.com/raketeneinhorn/raketeneinhorn-gradle-version-catalog/packages[published on GitHub Packages], which
 requires authentication.
+
+== Versioning
+
+=== Semantic Versioning
+
+The version catalog follows https://semver.org/[Semantic Versioning] (SemVer) using the following rules:
+
+1. When one or more artifact versions change, the highest level of change is applied to the catalog’s version,
+with MAJOR > MINOR > PATCH.
+2. When a new library or plugin is added to the version catalog, the MINOR version is incremented.
+3. Any other changes to the catalog must be classified according to the original SemVer rules.
+
+This means that the catalog’s version is primarily defined by the versions of the artifacts contained within it.
+
+NOTE: Whether a breaking change according to the above rules is actually a breaking change for an application using the
+version catalog heavily depends on which libraries and plugins are used by the application.
+
+== Technologies
+
+=== Precedence of Spring Boot's dependency management
+
+Please note that
+https://docs.spring.io/spring-boot/appendix/dependency-versions/coordinates.html[Spring Boot's dependency management]
+should always take precedence.
+
+This also means that libraries and plugins in the version catalog should be regularly checked to see if they have been
+recently added to Spring Boot.
 
 == License
 

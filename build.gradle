@@ -1,7 +1,7 @@
 plugins {
     id 'version-catalog'
     id 'maven-publish'
-    id 'pl.allegro.tech.build.axion-release' version '1.18.15'
+    id 'pl.allegro.tech.build.axion-release' version '1.18.16'
     id 'org.sonarqube' version '6.0.0.5145'
 }
 
@@ -15,7 +15,7 @@ catalog {
 
         library('logstash-logback-encoder', 'net.logstash.logback', 'logstash-logback-encoder').version('8.0')
 
-        plugin('axion-release', 'pl.allegro.tech.build.axion-release').version('1.18.15')
+        plugin('axion-release', 'pl.allegro.tech.build.axion-release').version('1.18.16')
         plugin('sonarqube', 'org.sonarqube').version('6.0.0.5145')
         plugin('springframework-boot', 'org.springframework.boot').versionRef('spring-boot')
         plugin('lombok', 'io.freefair.lombok').versionRef('lombok')

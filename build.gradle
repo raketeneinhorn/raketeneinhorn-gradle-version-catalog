@@ -11,7 +11,7 @@ version = scmVersion.version
 catalog {
     versionCatalog {
         version('spring-boot', '3.4.3')
-        version('lombok', '8.12.2')
+        version('lombok', '8.12.2.1')
 
         library('logstash-logback-encoder', 'net.logstash.logback', 'logstash-logback-encoder').version('8.0')
         library('dasniko-testcontainers-keycloak', 'com.github.dasniko', 'testcontainers-keycloak').version('3.6.0')

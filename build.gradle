@@ -2,7 +2,7 @@ plugins {
     id 'version-catalog'
     id 'maven-publish'
     id 'pl.allegro.tech.build.axion-release' version '1.18.18'
-    id 'org.sonarqube' version '6.0.1.5171'
+    id 'org.sonarqube' version '6.1.0.5360'
 }
 
 group 'com.raketeneinhorn.gradle'
@@ -17,7 +17,7 @@ catalog {
         library('dasniko-testcontainers-keycloak', 'com.github.dasniko', 'testcontainers-keycloak').version('3.6.0')
 
         plugin('axion-release', 'pl.allegro.tech.build.axion-release').version('1.18.18')
-        plugin('sonarqube', 'org.sonarqube').version('6.0.1.5171')
+        plugin('sonarqube', 'org.sonarqube').version('6.1.0.5360')
         plugin('springframework-boot', 'org.springframework.boot').versionRef('spring-boot')
         plugin('lombok', 'io.freefair.lombok').versionRef('lombok')
 

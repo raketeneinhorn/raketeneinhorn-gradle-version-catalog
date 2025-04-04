@@ -5,7 +5,7 @@ plugins {
     id 'org.sonarqube' version '6.1.0.5360'
 }
 
-group 'com.raketeneinhorn.gradle'
+group = 'com.raketeneinhorn.gradle'
 version = scmVersion.version
 
 catalog {
@@ -13,7 +13,9 @@ catalog {
         version('spring-boot', '3.4.4')
         version('lombok', '8.13.1')
 
-        library('logstash-logback-encoder', 'net.logstash.logback', 'logstash-logback-encoder').version('8.0')
+        /* bom */
+        library('jmolecules-bom', 'org.jmolecules', 'jmolecules-bom').version('2023.3.0')
+
         library('dasniko-testcontainers-keycloak', 'com.github.dasniko', 'testcontainers-keycloak').version('3.6.0')
 
         plugin('axion-release', 'pl.allegro.tech.build.axion-release').version('1.18.18')

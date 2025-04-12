@@ -16,7 +16,7 @@ catalog {
         /* bom */
         library('jmolecules-bom', 'org.jmolecules', 'jmolecules-bom').version('2023.3.0')
 
-        library('dasniko-testcontainers-keycloak', 'com.github.dasniko', 'testcontainers-keycloak').version('3.6.0')
+        library('dasniko-testcontainers-keycloak', 'com.github.dasniko', 'testcontainers-keycloak').version('3.7.0')
 
         plugin('axion-release', 'pl.allegro.tech.build.axion-release').version('1.18.18')
         plugin('sonarqube', 'org.sonarqube').version('6.1.0.5360')

@@ -14,7 +14,7 @@ catalog {
         version('lombok', '8.13.1')
 
         /* bom */
-        library('jmolecules-bom', 'org.jmolecules', 'jmolecules-bom').version('2023.3.1')
+        library('jmolecules-bom', 'org.jmolecules', 'jmolecules-bom').version('2023.3.2')
 
         library('dasniko-testcontainers-keycloak', 'com.github.dasniko', 'testcontainers-keycloak').version('3.7.0')
 

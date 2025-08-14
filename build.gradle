@@ -1,7 +1,7 @@
 plugins {
     id 'version-catalog'
     id 'maven-publish'
-    id 'pl.allegro.tech.build.axion-release' version '1.19.1'
+    id 'pl.allegro.tech.build.axion-release' version '1.20.1'
     id 'org.sonarqube' version '6.2.0.5505'
 }
 
@@ -18,7 +18,7 @@ catalog {
 
         library('dasniko-testcontainers-keycloak', 'com.github.dasniko', 'testcontainers-keycloak').version('3.8.0')
 
-        plugin('axion-release', 'pl.allegro.tech.build.axion-release').version('1.19.1')
+        plugin('axion-release', 'pl.allegro.tech.build.axion-release').version('1.20.1')
         plugin('sonarqube', 'org.sonarqube').version('6.2.0.5505')
         plugin('springframework-boot', 'org.springframework.boot').versionRef('spring-boot')
         plugin('lombok', 'io.freefair.lombok').versionRef('lombok')

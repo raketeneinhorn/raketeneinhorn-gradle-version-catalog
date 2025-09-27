@@ -11,7 +11,7 @@ version = scmVersion.version
 catalog {
     versionCatalog {
         version('spring-boot', '3.5.6')
-        version('lombok', '8.14.2')
+        version('lombok', '9.0.0')
 
         /* bom */
         library('jmolecules-bom', 'org.jmolecules', 'jmolecules-bom').version('2023.3.4')

@@ -10,7 +10,7 @@ version = scmVersion.version
 
 catalog {
     versionCatalog {
-        version('spring-boot', '4.0.4')
+        version('spring-boot', '4.0.5')
         version('lombok', '9.2.0')
 
         /* bom */

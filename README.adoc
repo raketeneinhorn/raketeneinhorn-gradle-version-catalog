@@ -3,6 +3,9 @@ Benjamin Boksa
 :toc:
 :toclevels: 3
 
+IMPORTANT: This repository has moved to
+https://codeberg.org/raketeneinhorn/version-catalog[Codeberg].
+
 Gradle version catalog for Spring Boot projects. Provides artifacts in addition to Spring Boot's dependency management.
 
 == Motivation

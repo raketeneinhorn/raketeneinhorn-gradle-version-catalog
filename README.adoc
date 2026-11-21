@@ -1,10 +1,14 @@
 = Raketeneinhorn Gradle Version Catalog
-Benjamin Boksa
-:toc:
-:toclevels: 3
 
-IMPORTANT: This repository has moved to
-https://codeberg.org/raketeneinhorn/version-catalog[Codeberg].
+[IMPORTANT]
+====
+*The Raketeneinhorn Gradle Version Catalog has moved to Codeberg.*
+
+For current documentation, releases, issues, and contributions, visit
+https://codeberg.org/raketeneinhorn/version-catalog[the project on Codeberg].
+
+This GitHub repository is kept as a historical archive.
+====
 
 Gradle version catalog for Spring Boot projects. Provides artifacts in addition to Spring Boot's dependency management.
 

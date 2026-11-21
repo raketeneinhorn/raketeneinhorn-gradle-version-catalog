@@ -1,4 +1,4 @@
-= Raketeneinhorn Gradle Version Catalog
+= Raketeneinhorn Gradle Version Catalog (Moved to Codeberg)
 
 [IMPORTANT]
 ====
